@@ -21,15 +21,9 @@ def get_japanese_emoticon(file_path, emoticon)
   hash = load_library(file_path)
   
   hash.values[1].each do |english, japanese|
-    if english == emoticon
-      return japanese
-    end
+    return japanese if english == emoticon
   end
-    gets
   
-  binding.pry
-  
-  return 
 end
 
 def get_english_meaning
