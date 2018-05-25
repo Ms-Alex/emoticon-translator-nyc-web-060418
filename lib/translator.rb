@@ -2,7 +2,9 @@
 
 def load_library(file_path)
   # code goes here
-  hash = {}
+  hash = { "get_meaning" => {}, 
+          "get_emotion" => {}
+  }
   
   hash
 end
