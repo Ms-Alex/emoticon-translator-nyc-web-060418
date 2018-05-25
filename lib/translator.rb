@@ -5,12 +5,12 @@ require 'pry'
 def load_library(file_path)
   # code goes here
   emo = YAML.load_file(file_path)
-  binding.pry
   
   hash = { "get_meaning" => {}, 
           "get_emotion" => {}
   }
   
+  binding.pry
   hash
 end
 
