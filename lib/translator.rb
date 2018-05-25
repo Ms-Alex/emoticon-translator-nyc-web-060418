@@ -20,7 +20,8 @@ def get_japanese_emoticon(file_path, emoticon)
   # code goes here
   hash = load_library(file_path)
   
-  hash.values[0].each do |gets_keys|
+  hash.values[0].each do |emo, meaning|
+    if emo == 
     gets
   
   binding.pry
