@@ -4,6 +4,7 @@ require 'yaml'
 def load_library(file_path)
   # code goes here
   YAML.load_file(file_path)
+  bidning.pry
   hash = { "get_meaning" => {}, 
           "get_emotion" => {}
   }
