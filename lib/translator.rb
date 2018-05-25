@@ -6,9 +6,7 @@ def load_library(file_path)
   # code goes here
   emo = YAML.load_file(file_path)
   
-  hash = { "get_meaning" => {}, 
-          "get_emoticon" => {}
-  }
+  hash = { "get_meaning" => {}, "get_emoticon" => {} }
   
   emo.each do |meaning, sym_arr| # array of eng, jap
     hash["get_meaning"].merge!( { sym_arr[1] => meaning} )
@@ -18,7 +16,7 @@ def load_library(file_path)
   hash
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(file_path, emoticon)
   # code goes here
 end
 
