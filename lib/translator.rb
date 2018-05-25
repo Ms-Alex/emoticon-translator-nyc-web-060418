@@ -13,7 +13,6 @@ def load_library(file_path)
   emo.each do |meaning, sym| # array of eng, jap
     
   
-  binding.pry
   hash
 end
 
