@@ -10,6 +10,9 @@ def load_library(file_path)
           "get_emotion" => {}
   }
   
+  emo.each do |meaning, sym|
+    
+  
   binding.pry
   hash
 end
