@@ -11,7 +11,7 @@ def load_library(file_path)
   }
   
   emo.each do |meaning, sym| # array of eng, jap
-    hash[get_meaning] = sym[1]
+    hash[get_meaning][sym[1]]
   end
   
   hash
