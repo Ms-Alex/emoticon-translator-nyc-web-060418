@@ -32,7 +32,7 @@ def get_english_meaning(file_path, emoticon)
   hash = load_library(file_path)
   
   hash.values[0].each do |japanese, meaning|
-    return japanese if english == emoticon
+    return meaning if japanese == emoticon
   end
   
   return "Sorry, that emoticon was not found"
