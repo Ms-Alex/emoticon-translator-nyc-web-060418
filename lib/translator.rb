@@ -23,6 +23,7 @@ def get_japanese_emoticon(file_path, emoticon)
   hash.values[1].each do |english, japanese|
     return japanese if english == emoticon
   end
+  
   puts "Sorry, that emoticon was not found"
 end
 
