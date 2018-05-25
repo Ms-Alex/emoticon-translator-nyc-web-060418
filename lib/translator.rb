@@ -4,7 +4,7 @@ require 'pry'
 
 def load_library(file_path)
   # code goes here
-  YAML.load_file(file_path)
+  emo = YAML.load_file(file_path)
   binding.pry
   
   hash = { "get_meaning" => {}, 
