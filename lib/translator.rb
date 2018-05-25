@@ -10,8 +10,8 @@ def load_library(file_path)
           "get_emoticon" => {}
   }
   
-  emo.each do |meaning, sym_array| # array of eng, jap
-    hash[get_meaning][sym[1]] = meaning
+  emo.each do |meaning, sym_arr| # array of eng, jap
+    hash[get_meaning].merge!( { sym_arr})
   end
   
   hash
