@@ -10,7 +10,7 @@ def load_library(file_path)
           "get_emotion" => {}
   }
   
-  emo.each do |meaning, sym|
+  emo.each do |meaning, sym| # array of eng, jap
     
   
   binding.pry
