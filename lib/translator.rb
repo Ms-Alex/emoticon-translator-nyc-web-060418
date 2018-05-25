@@ -7,7 +7,7 @@ def load_library(file_path)
   emo = YAML.load_file(file_path)
   
   hash = { "get_meaning" => {}, 
-          "get_emotion" => {}
+          "get_emoticon" => {}
   }
   
   emo.each do |meaning, sym| # array of eng, jap
